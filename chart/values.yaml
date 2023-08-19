@@ -1,0 +1,4 @@
+image: docker.pipem.io/alerter
+version: VERSION
+
+replicas: 1
