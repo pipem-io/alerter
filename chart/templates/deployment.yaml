@@ -31,17 +31,17 @@ spec:
               memory: "256Mi"
               cpu: "100m"
           ports:
-            - containerPort: 80
+            - containerPort: 8080
           livenessProbe:
             httpGet:
               path: /healthz
-              port: 80
+              port: 8080
             periodSeconds: 30
             timeoutSeconds: 5
           readinessProbe:
             httpGet:
               path: /healthz
-              port: 80
+              port: 8080
             periodSeconds: 30
             timeoutSeconds: 5
           envFrom:
